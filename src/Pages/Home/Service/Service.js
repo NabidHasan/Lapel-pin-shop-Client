@@ -7,34 +7,37 @@ import CardMedia from '@mui/material/CardMedia';
 
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom';
 
 const Service = (props) => {
-    const { picture, fee, name, about } = props.service;
+    const { img, price, name, address, _id } = props.product;
     return (
 
         <Grid sx={{ display: 'flex', justifyContent: 'center' }} item xs={4} sm={4} md={4}>
-            <Card sx={{ maxWidth: 300 }}>
+            <Card sx={{ minWidth: 300 }}>
                 <CardContent>
                     <CardMedia
                         component="img"
                         height="180"
 
-                        image={picture}
+                        image={img}
                         alt="Paella dish"
                     />
                     <Typography variant="h5" component="div">
                         {name}
                     </Typography>
                     <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                        {fee}
+                        ${price}
                     </Typography>
                     <Typography variant="body2">
-                        {about}
+                        {address}
 
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small">Purchase</Button>
+                    <Link style={{ textDecoration: 'none' }} to={`/purchase/${_id}`}>
+                        <Button size="small">Purchase</Button>
+                    </Link>
                 </CardActions>
             </Card>
         </Grid>
