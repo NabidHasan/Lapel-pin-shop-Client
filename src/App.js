@@ -14,6 +14,7 @@ import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import ShowAllOrder from './Pages/ShowAllOrder/ShowAllOrder';
 import ManageAllOrder from './Pages/MangeAllOrder/ManageAllOrder';
 import Dashboard from './Pages/Dashboard/Dashboard';
+import Reviews from './Pages/Reviews/Reviews';
 
 
 function App() {
@@ -43,6 +44,10 @@ function App() {
 
             <Route path='/explore'>
               <Explores></Explores>
+            </Route>
+
+            <Route path='/reviews'>
+              <Reviews></Reviews>
             </Route>
             <Route path='/addNewService'>
               <AddNewServices></AddNewServices>

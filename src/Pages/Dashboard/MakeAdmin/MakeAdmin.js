@@ -38,7 +38,6 @@ const MakeAdmin = () => {
     }
     return (
         <div>
-            <h3>Hi Admins</h3>
             <form onSubmit={handleAdminSubmit}>
                 <TextField
                     name='email'
@@ -51,6 +50,8 @@ const MakeAdmin = () => {
                 <Button type='submit' variant="contained">Make Admin</Button>
 
             </form>
+            <h3 style={{ color: 'gray' }}>Reminder: Only an admin can add new Admins</h3>
+
             {success && <Alert severity="success">Made admin successfully</Alert>}
         </div>
     );
