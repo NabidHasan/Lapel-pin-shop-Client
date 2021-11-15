@@ -7,7 +7,7 @@ const AddNewServices = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('http://localhost:5000/products', data)
+        axios.post('https://frozen-crag-17113.herokuapp.com/products', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added Successfully!!')

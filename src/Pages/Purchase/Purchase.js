@@ -24,7 +24,7 @@ const Purchase = () => {
         data.img = `${detailProduct.img}`
 
 
-        axios.post('http://localhost:5000/myOrder', data)
+        axios.post('https://frozen-crag-17113.herokuapp.com/myOrder', data)
 
             .then(res => {
                 if (res.data.insertedId) {

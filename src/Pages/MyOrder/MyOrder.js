@@ -9,13 +9,13 @@ const MyOrder = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myOrder/${user.email}`)
+        fetch(`https://frozen-crag-17113.herokuapp.com/myOrder/${user.email}`)
             .then(res => res.json())
             .then(data => setOrder(data))
     }, [])
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/myOrder/${id}`;
+        const url = `https://frozen-crag-17113.herokuapp.com/myOrder/${id}`;
         fetch(url, {
             method: "DELETE",
         })
