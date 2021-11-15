@@ -8,7 +8,7 @@ import useReviews from '../../hooks/useReviews';
 const Reviews = () => {
     const [reviews, setReviews] = useReviews();
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ flexGrow: 1 }} style={{ margin: '50px' }}>
             <h2 style={{ color: 'gray', margin: '40px' }}>Our Reviews</h2>
             <Container>
                 <Grid container spacing={{ xs: 1, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>

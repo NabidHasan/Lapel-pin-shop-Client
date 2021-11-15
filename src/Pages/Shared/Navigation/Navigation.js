@@ -9,6 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
+
 const Navigation = () => {
     const { user, logOut } = useAuth();
     return (

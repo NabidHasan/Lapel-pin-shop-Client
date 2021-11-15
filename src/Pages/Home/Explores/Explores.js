@@ -3,12 +3,14 @@ import { Box } from '@mui/system';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import useProduct from '../../../hooks/useProduct';
+import Footer from '../../Shared/Footer/Footer';
 
 const Explores = () => {
     const [products, setProducts] = useProduct();
     console.log(products);
     return (
         <Box sx={{ flexGrow: 1 }}>
+            <h2 style={{ color: 'gray' }}>Explore All Products</h2>
             <Container>
                 <Grid container spacing={{ xs: 1, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                     {
@@ -47,7 +49,9 @@ const Explores = () => {
                     }
                 </Grid>
             </Container>
+            <Footer></Footer>
         </Box>
+
     );
 };
 

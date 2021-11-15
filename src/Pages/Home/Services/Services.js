@@ -12,6 +12,7 @@ const Services = () => {
     const [products, setProducts] = useProduct();
     return (
         <Box sx={{ flexGrow: 1 }}>
+            <h2 style={{ color: 'gray' }}>Our Products</h2>
             <Container>
                 <Grid container spacing={{ xs: 1, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                     {
