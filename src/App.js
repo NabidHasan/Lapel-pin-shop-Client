@@ -15,6 +15,9 @@ import ShowAllOrder from './Pages/ShowAllOrder/ShowAllOrder';
 import ManageAllOrder from './Pages/MangeAllOrder/ManageAllOrder';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import Reviews from './Pages/Reviews/Reviews';
+import AddReview from './Pages/Dashboard/AddReview/AddReview';
+import MyOrder from './Pages/MyOrder/MyOrder';
+import Pay from './Pages/Dashboard/Pay/Pay';
 
 
 function App() {
@@ -49,11 +52,21 @@ function App() {
             <Route path='/reviews'>
               <Reviews></Reviews>
             </Route>
+            <Route path='/pay'>
+              <Pay></Pay>
+            </Route>
+            <Route path='/addReview'>
+              <AddReview></AddReview>
+            </Route>
             <Route path='/addNewService'>
               <AddNewServices></AddNewServices>
             </Route>
             <Route path='/manageOrder'>
               <ManageAllOrder></ManageAllOrder>
+            </Route>
+
+            <Route path='/myOrder'>
+              <MyOrder></MyOrder>
             </Route>
             <PrivateRoute path='/purchase/:productId'>
               <Purchase></Purchase>

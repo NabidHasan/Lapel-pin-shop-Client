@@ -37,7 +37,6 @@ const ShowAllOrder = (props) => {
                     <CardMedia
                         component="img"
                         height="180"
-
                         image={img}
                         alt="Paella dish"
                     />
