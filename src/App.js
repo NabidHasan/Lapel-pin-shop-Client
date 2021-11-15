@@ -13,6 +13,7 @@ import Purchase from './Pages/Purchase/Purchase';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import ShowAllOrder from './Pages/ShowAllOrder/ShowAllOrder';
 import ManageAllOrder from './Pages/MangeAllOrder/ManageAllOrder';
+import Dashboard from './Pages/Dashboard/Dashboard';
 
 
 function App() {
@@ -35,6 +36,10 @@ function App() {
             <Route path='/register'>
               <Register></Register>
             </Route>
+
+            <PrivateRoute path='/dashboard'>
+              <Dashboard></Dashboard>
+            </PrivateRoute>
 
             <Route path='/explore'>
               <Explores></Explores>
